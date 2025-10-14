@@ -1,0 +1,130 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-blue), var(--primary-blue));
+  color: var(--text-light);
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(0, 119, 182, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--secondary-blue);
+  padding-bottom: 0.5rem;
+}
+
+.reading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin: 1.5rem 0;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(72, 202, 228, 0.3);
+}
+
+.control-button {
+  width: 100%;
+  background-color: var(--secondary-blue);
+  color: var(--text-light);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2);
+}
+
+.control-button:hover {
+  background-color: var(--primary-blue);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.4);
+}
+
+.control-button.active {
+  background-color: var(--accent);
+  box-shadow: 0 4px 15px rgba(72, 202, 228, 0.4);
+}
+
+.status {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .reading {
+    font-size: 2.5rem;
+  }
+}
