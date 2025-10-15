@@ -2,7 +2,7 @@
 
 AutoAqua is a modern web-based dashboard for monitoring and controlling automated irrigation systems. It provides real-time monitoring of soil moisture levels, temperature readings, and manual control capabilities for irrigation management.
 
-![AutoAqua Dashboard](frontend-dummy/public/dashboard-preview.png)
+![AutoAqua Dashboard](frontend-dummy/public/frontend-preview.png)
 
 ## Features
 
